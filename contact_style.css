@@ -1,0 +1,314 @@
+html, body { margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke}
+
+@media only screen and (min-width: 768px) {
+    .nav_bar {
+        font-weight: 500;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+    }
+
+    .nav_bar ul > li {
+        float: right;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        padding-right: 30px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+        transition: 0.2s;
+    }
+
+    li a:hover {
+        color: #F37021;
+    }
+
+    .links p {
+        color: white;
+        font-size: 48px;
+        padding-left: 55px;
+        padding-top: 30px;
+    }
+
+    .name h1 {
+        padding-top: 50%;
+        text-align: center;
+    }
+
+    .name p {
+        text-align: center;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .flex-container img {
+        padding: 10px;
+        font-size: 30px;
+        transition: 0.2s;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 0.3fr 0.5fr 0.5fr 1.0fr 0.3fr;
+        grid-template-rows: 1.0fr 1.0fr 1.0fr 1.0fr 0.1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+    ". . . . ."
+    ". pic pic name ."
+    ". links links name ."
+    ". . . . ."
+    "bottom bottom bottom bottom bottom";
+    }
+
+
+    .pic {
+        background-image: url("image/patternGroup.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic;
+    }
+
+    .links {
+        background-color: #212121;
+        grid-area: links;
+    }
+
+    .name {
+        background-color: white;
+        grid-area: name;
+    }
+
+    .bottom p {
+        color: white;
+        text-align: center;
+    }
+
+    .bottom img:hover {
+        opacity: 0.5;
+    }
+
+    .bottom {
+        background-color: black;
+        grid-area: bottom;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .nav_bar {
+        font-weight: 500;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+    }
+
+    .nav_bar ul > li {
+        float: right;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        padding-right: 30px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+        transition: 0.2s;
+    }
+
+    li a:hover {
+        color: #F37021;
+    }
+
+    .links p {
+        color: white;
+        font-size: 72px;
+        padding-left: 100px;
+        padding-top: 50px;
+    }
+
+    .name h1 {
+        padding-top: 40%;
+        text-align: center;
+    }
+
+    .name p {
+        text-align: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 0.3fr 0.5fr 0.5fr 1.0fr 0.3fr;
+        grid-template-rows: 0.3fr 0.7fr 0.7fr 0.3fr 0.1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+    ". . . . ."
+    ". pic pic name ."
+    ". links links name ."
+    ". . . . ."
+    "bottom bottom bottom bottom bottom";
+    }
+
+
+    .pic {
+        background-image: url("image/patternGroup.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic;
+    }
+
+    .links {
+        background-color: #212121;
+        grid-area: links;
+    }
+
+    .name {
+        background-color: white;
+        grid-area: name;
+    }
+
+    .bottom p {
+        color: white;
+        text-align: center;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding-top: 20px;
+    }
+
+    .flex-container img {
+        padding-left: 100px;
+        padding-bottom: 25px;
+        font-size: 30px;
+        transition: 0.2s;
+    }
+
+    .bottom img:hover {
+        opacity: 0.5;
+    }
+
+    .bottom {
+        background-color: black;
+        grid-area: bottom;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav_bar {
+        font-weight: 500;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+    }
+
+    .nav_bar ul > li {
+        float: right;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        padding-right: 30px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        transition: 0.2s;
+    }
+
+    li a:hover {
+        color: #F37021;
+    }
+
+    .links p {
+        color: white;
+        font-size: 0px;
+        padding-left: 55px;
+        padding-top: 30px;
+    }
+
+    .name h1 {
+        padding-top: 50%;
+        text-align: center;
+    }
+
+    .name p {
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .flex-container {
+        max-width: 100px;
+    }
+
+    .flex-container img {
+        padding-left: 40px;
+        /*padding-right: 40px;*/
+        padding-bottom: 20px;
+        transition: 0.2s;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 0.3fr 0.5fr 0.5fr 1.0fr 0.3fr;
+        grid-template-rows: 1.0fr 1.0fr 0.5fr 1.0fr 0.1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+    ". . . . ."
+    ". pic pic name ."
+    ". links links name ."
+    ". . . . ."
+    "bottom bottom bottom bottom bottom";
+    }
+
+
+    .pic {
+        background-image: url("image/patternGroup.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic;
+    }
+
+    .links {
+        background-color: #212121;
+        grid-area: links;
+    }
+
+    .name {
+        background-color: white;
+        grid-area: name;
+    }
+
+    .bottom p {
+        color: white;
+        text-align: center;
+    }
+
+    .bottom img:hover {
+        opacity: 0.5;
+    }
+
+    .bottom {
+        background-color: black;
+        grid-area: bottom;
+    }
+}
