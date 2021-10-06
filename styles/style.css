@@ -743,7 +743,7 @@ li a:hover {
         font-size: 22px;
         padding-left: 25px;
         max-width: 290px;
-        word-break: break-all;
+        /*word-break: break-all;*/
     }
 
     .regular_content {
@@ -753,7 +753,7 @@ li a:hover {
         font-size: 12px;
         line-height: 36px;
         max-width:300px;
-        word-break: break-all;
+        /*word-break: break-all;*/
     }
 
     .click_me {
