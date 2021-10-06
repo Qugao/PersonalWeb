@@ -1,0 +1,640 @@
+html, body { margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white}
+
+@media only screen and (min-width: 768px) {
+    .nav_bar {
+        font-weight: 500;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+    }
+
+    .nav_bar ul > li {
+        float: right;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        padding-right: 30px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+        transition: 0.2s;
+    }
+
+    li a:hover {
+        color: #F37021;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
+        grid-template-rows: 1.5fr 0.5fr 2fr 2fr 1fr 1fr 2fr 2fr 2fr 0.5fr 0.3fr;
+        gap: 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+    ". . title title . ."
+    ". . . . . ."
+    ". pic1 pic1 pic2 pic2 ."
+    ". pic1 pic1 pic3 pic3 ."
+    ". pic5 pic5 pic4 pic4 ."
+    ". pic5 pic5 pic4 pic4 ."
+    ". pic6 pic6 pic4 pic4 ."
+    ". pic7 pic7 pic8 pic8 ."
+    ". pic7 pic7 pic8 pic8 ."
+    ". . . . . ."
+    "bottom bottom bottom bottom bottom bottom";
+    }
+
+    .title {
+        font-size: 48px;
+        text-align: center;
+        grid-area: title;
+        font-weight: 300;
+    }
+
+    .title p {
+        padding-top: 50px;
+    }
+
+    .pic1 {
+        background-image: url("../image/p1.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #F37021;
+        grid-area: pic1;
+    }
+
+    .pic2 {
+        background-image: url("../image/p2.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #B2DFDB;
+        grid-area: pic2;
+    }
+
+    .pic3 {
+        background-image: url("../image/p3.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #C5E1A5;
+        grid-area: pic3;
+    }
+
+    .pic4 {
+        background-image: url("../image/p4.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic4;
+    }
+
+    .pic5 {
+        background-image: url("../image/p5.jpg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic5;
+    }
+
+    .pic6 {
+        background-image: url("../image/p7.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic6;
+    }
+
+    .pic7 {
+        background-image: url("../image/p8.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic7;
+    }
+
+    .pic8 {
+        background-image: url("../image/p6.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic8;
+    }
+
+    .bottom {
+        grid-area: bottom;
+    }
+
+    .bottom p {
+        color: white;
+        text-align: center;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        font-size: 10px;
+    }
+
+    .flex-container img {
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        transition: 0.2s;
+    }
+
+    .bottom img:hover {
+        opacity: 0.5;
+    }
+
+    .bottom {
+        background-color: black;
+        grid-area: bottom;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .nav_bar {
+        font-weight: 500;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+    }
+
+    .nav_bar ul > li {
+        float: right;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        padding-right: 30px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+        transition: 0.2s;
+    }
+
+    li a:hover {
+        color: #F37021;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1.5fr 0.5fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr 0.3fr;
+        gap: 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+    ". . title title . ."
+    ". . . . . ."
+    ". pic1 pic1 pic2 pic2 ."
+    ". pic1 pic1 pic3 pic3 ."
+    ". pic5 pic5 pic4 pic4 ."
+    ". pic5 pic5 pic4 pic4 ."
+    ". pic6 pic6 pic4 pic4 ."
+    ". pic7 pic7 pic8 pic8 ."
+    ". pic7 pic7 pic8 pic8 ."
+    ". . . . . ."
+    "bottom bottom bottom bottom bottom bottom";
+    }
+
+    .title {
+        font-size: 48px;
+        text-align: center;
+        grid-area: title;
+        font-weight: 300;
+    }
+
+    .title p {
+        padding-top: 50px;
+    }
+
+    .pic1 {
+        background-image: url("../image/p1.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #F37021;
+        grid-area: pic1;
+    }
+
+    .pic2 {
+        background-image: url("../image/p2.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #B2DFDB;
+        grid-area: pic2;
+    }
+
+    .pic3 {
+        background-image: url("../image/p3.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #C5E1A5;
+        grid-area: pic3;
+    }
+
+    .pic4 {
+        background-image: url("../image/p4.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic4;
+    }
+
+    .pic5 {
+        background-image: url("../image/p5.jpg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic5;
+    }
+
+    .pic6 {
+        background-image: url("../image/p7.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic6;
+    }
+
+    .pic7 {
+        background-image: url("../image/p8.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic7;
+    }
+
+    .pic8 {
+        background-image: url("../image/p6.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic8;
+    }
+
+    .bottom {
+        grid-area: bottom;
+    }
+
+    .bottom p {
+        color: white;
+        text-align: center;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        font-size: 10px;
+    }
+
+    .flex-container img {
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        transition: 0.2s;
+    }
+
+    .bottom img:hover {
+        opacity: 0.5;
+    }
+
+    .bottom {
+        background-color: black;
+        grid-area: bottom;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav_bar {
+        font-weight: 500;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+    }
+
+    .nav_bar ul > li {
+        float: right;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        padding-right: 30px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+        transition: 0.2s;
+    }
+
+    li a:hover {
+        color: #F37021;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
+        grid-template-rows: 1.5fr 0.5fr 2fr 2fr 1fr 1fr 2fr 2fr 2fr 0.5fr 0.3fr;
+        gap: 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+    ". . title title . ."
+    ". . . . . ."
+    ". pic1 pic1 pic2 pic2 ."
+    ". pic1 pic1 pic3 pic3 ."
+    ". pic5 pic5 pic4 pic4 ."
+    ". pic5 pic5 pic4 pic4 ."
+    ". pic6 pic6 pic4 pic4 ."
+    ". pic7 pic7 pic8 pic8 ."
+    ". pic7 pic7 pic8 pic8 ."
+    ". . . . . ."
+    "bottom bottom bottom bottom bottom bottom";
+    }
+
+    .title {
+        font-size: 48px;
+        text-align: center;
+        grid-area: title;
+        font-weight: 300;
+    }
+
+    .title p {
+        padding-top: 50px;
+    }
+
+    .pic1 {
+        background-image: url("../image/p1.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #F37021;
+        grid-area: pic1;
+    }
+
+    .pic2 {
+        background-image: url("../image/p2.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #B2DFDB;
+        grid-area: pic2;
+    }
+
+    .pic3 {
+        background-image: url("../image/p3.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #C5E1A5;
+        grid-area: pic3;
+    }
+
+    .pic4 {
+        background-image: url("../image/p4.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic4;
+    }
+
+    .pic5 {
+        background-image: url("../image/p5.jpg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic5;
+    }
+
+    .pic6 {
+        background-image: url("../image/p7.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic6;
+    }
+
+    .pic7 {
+        background-image: url("../image/p8.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic7;
+    }
+
+    .pic8 {
+        background-image: url("../image/p6.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic8;
+    }
+
+    .bottom {
+        grid-area: bottom;
+    }
+
+    .bottom p {
+        color: white;
+        text-align: center;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        font-size: 10px;
+    }
+
+    .flex-container img {
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        transition: 0.2s;
+    }
+
+    .bottom img:hover {
+        opacity: 0.5;
+    }
+
+    .bottom {
+        background-color: black;
+        grid-area: bottom;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .nav_bar {
+        font-weight: 500;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+    }
+
+    .nav_bar ul > li {
+        float: right;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        padding-right: 30px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        transition: 0.2s;
+    }
+
+    li a:hover {
+        color: #F37021;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
+        grid-template-rows: 1.5fr 0.5fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr 0.5fr 0.3fr;
+        gap: 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+    ". . title title . ."
+    ". . . . . ."
+    ". pic1 pic1 pic2 pic2 ."
+    ". pic1 pic1 pic3 pic3 ."
+    ". pic5 pic5 pic4 pic4 ."
+    ". pic5 pic5 pic4 pic4 ."
+    ". pic6 pic6 pic4 pic4 ."
+    ". pic7 pic7 pic8 pic8 ."
+    ". pic7 pic7 pic8 pic8 ."
+    ". . . . . ."
+    "bottom bottom bottom bottom bottom bottom";
+    }
+
+    .title {
+        font-size: 48px;
+        text-align: center;
+        grid-area: title;
+        font-weight: 300;
+    }
+
+    .title p {
+        padding-top: 100px;
+    }
+
+    .pic1 {
+        background-image: url("../image/p1.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #F37021;
+        grid-area: pic1;
+    }
+
+    .pic2 {
+        background-image: url("../image/p2.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #B2DFDB;
+        grid-area: pic2;
+    }
+
+    .pic3 {
+        background-image: url("../image/p3.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #C5E1A5;
+        grid-area: pic3;
+    }
+
+    .pic4 {
+        background-image: url("../image/p4.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic4;
+    }
+
+    .pic5 {
+        background-image: url("../image/p5.jpg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic5;
+    }
+
+    .pic6 {
+        background-image: url("../image/p7.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic6;
+    }
+
+    .pic7 {
+        background-image: url("../image/p8.JPG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic7;
+    }
+
+    .pic8 {
+        background-image: url("../image/p6.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: pic8;
+    }
+
+    .bottom {
+        grid-area: bottom;
+    }
+
+    .bottom p {
+        color: white;
+        text-align: center;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        font-size: 10px;
+    }
+
+    .flex-container img {
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        transition: 0.2s;
+    }
+
+    .bottom img:hover {
+        opacity: 0.5;
+    }
+
+    .bottom {
+        background-color: black;
+        grid-area: bottom;
+    }
+}

@@ -1,0 +1,802 @@
+html, body { margin: 0;
+    font-family: 'Roboto', sans-serif;
+background-color: whitesmoke}
+
+@media only screen and (min-width: 768px) {
+    .nav_bar {
+        font-weight: 500;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+    }
+
+    .nav_bar ul > li {
+        float: right;
+        display: inline-block;
+        zoom:1;
+        *display:inline;
+        padding-right: 30px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+        transition: 0.2s;
+    }
+
+    li a:hover {
+        color: #F37021;
+    }
+
+    .proj1_bg {
+        background-image: url("../image/pattern2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .proj1 {
+        background-image: url("../image/keepfresh.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .proj2 {
+        background-image: url("../image/aws.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .proj3 {
+        background-image: url("../image/color.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .proj2_bg {
+        background-image: url("../image/pattern3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .proj3_bg {
+        background-image: url("../image/pattern1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .click_me {
+        font-weight: 500;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+        font-size: 10px;
+        line-height: 30px;
+        max-width: 380px;
+    }
+
+    .click_me a {
+        text-decoration: none;
+        color: #F37021;
+        transition: 0.2s;
+    }
+
+    .click_me a:hover {
+        color: white;
+    }
+
+
+
+
+    .project_header {
+        color: white;
+        max-width: 380px;
+        font-weight: 100;
+        font-size: 24px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .project_desc {
+        font-weight: 300;
+        padding-left: 20px;
+        padding-top: 10px;
+        /*padding-bottom: 20px;*/
+        color: white;
+        font-size: 12px;
+        line-height: 20px;
+        max-width: 400px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 0.3fr 0.6fr 0.4fr 0.4fr 0.3fr;
+        grid-template-rows: 0.3fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+    ". . . . ."
+    ". proj1 proj1_bg proj1_bg ."
+    ". proj1 proj1_des proj1_des ."
+    ". . . . ."
+    ". proj2 proj2_bg proj2_bg ."
+    ". proj2 proj2_des proj2_des ."
+    ". . . . ."
+    ". proj3 proj3_bg proj3_bg ."
+    ". proj3 proj4_des proj4_des ."
+    ". . . . ."
+    "bottom bottom bottom bottom bottom";
+    }
+
+    .proj1 {
+        background-color: white;
+        grid-area: proj1; }
+
+    .proj1_bg {
+        grid-area: proj1_bg;
+        background-color: #C5E1A5
+    }
+
+    .proj1_des {
+        background-color: #212121;
+        grid-area: proj1_des;
+    }
+
+    .proj2 {
+        background-color: white;
+        grid-area: proj2;
+    }
+
+    .proj2_bg {
+        background-color: #F37021;
+        grid-area: proj2_bg; }
+
+    .proj2_des {
+        background-color: #212121;
+        grid-area: proj2_des; }
+
+    .proj3 {
+        background-color: white;
+        grid-area: proj3; }
+
+    .proj3_bg {
+        background-color: #B2DFDB;
+        grid-area: proj3_bg; }
+
+    .proj4_des {
+        background-color: #212121;
+        grid-area: proj4_des; }
+
+    .bottom p{
+        color:white;
+        text-align: center;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        font-size: 10px;
+    }
+
+    .flex-container img {
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        transition: 0.2s;
+    }
+
+    .bottom img:hover {
+        opacity: 0.5;
+    }
+
+    .bottom {
+        background-color: black;
+        grid-area: bottom; }
+}
+
+@media only screen and (min-width: 1024px) {
+    .nav_bar {
+        font-weight: 500;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+    }
+
+    .nav_bar ul > li {
+        float: right;
+        display: inline-block;
+        zoom:1;
+        *display:inline;
+        padding-right: 30px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+        transition: 0.2s;
+    }
+
+    li a:hover {
+        color: #F37021;
+    }
+
+    .proj1_bg {
+        background-image: url("../image/pattern2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .proj1 {
+        background-image: url("../image/keepfresh.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .proj2 {
+        background-image: url("../image/aws.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .proj3 {
+        background-image: url("../image/color.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .proj2_bg {
+        background-image: url("../image/pattern3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .proj3_bg {
+        background-image: url("../image/pattern1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .click_me {
+        font-weight: 500;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: white;
+        font-size: 12px;
+        line-height: 30px;
+        max-width: 380px;
+    }
+
+    .click_me a {
+        text-decoration: none;
+        color: #F37021;
+        transition: 0.2s;
+    }
+
+    .click_me a:hover {
+        color: white;
+    }
+
+
+
+
+    .project_header {
+        color: white;
+        max-width: 380px;
+        font-weight: 100;
+        font-size: 36px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .project_desc {
+        font-weight: 300;
+        padding-left: 20px;
+        padding-top: 20px;
+        /*padding-bottom: 20px;*/
+        color: white;
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 600px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 0.3fr 0.6fr 0.4fr 0.4fr 0.3fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.3fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+    ". . . . ."
+    ". proj1 proj1_bg proj1_bg ."
+    ". proj1 proj1_des proj1_des ."
+    ". . . . ."
+    ". proj2 proj2_bg proj2_bg ."
+    ". proj2 proj2_des proj2_des ."
+    ". . . . ."
+    ". proj3 proj3_bg proj3_bg ."
+    ". proj3 proj4_des proj4_des ."
+    ". . . . ."
+    "bottom bottom bottom bottom bottom";
+    }
+
+    .proj1 {
+        background-color: white;
+        grid-area: proj1; }
+
+    .proj1_bg {
+        grid-area: proj1_bg;
+        background-color: #C5E1A5
+    }
+
+    .proj1_des {
+        background-color: #212121;
+        grid-area: proj1_des;
+    }
+
+    .proj2 {
+        background-color: white;
+        grid-area: proj2;
+    }
+
+    .proj2_bg {
+        background-color: #F37021;
+        grid-area: proj2_bg; }
+
+    .proj2_des {
+        background-color: #212121;
+        grid-area: proj2_des; }
+
+    .proj3 {
+        background-color: white;
+        grid-area: proj3; }
+
+    .proj3_bg {
+        background-color: #B2DFDB;
+        grid-area: proj3_bg; }
+
+    .proj4_des {
+        background-color: #212121;
+        grid-area: proj4_des; }
+
+    .bottom p{
+        color:white;
+        text-align: center;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .flex-container img {
+        padding: 10px;
+        font-size: 30px;
+        transition: 0.2s;
+    }
+
+    .bottom img:hover {
+        opacity: 0.5;
+    }
+
+    .bottom {
+        background-color: black;
+        grid-area: bottom; }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav_bar {
+        font-weight: 500;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+    }
+
+    .nav_bar ul > li {
+        float: right;
+        display: inline-block;
+        zoom:1;
+        *display:inline;
+        padding-right: 30px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+        transition: 0.2s;
+    }
+
+    li a:hover {
+        color: #F37021;
+    }
+
+    .proj1_bg {
+        background-image: url("../image/pattern2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .proj1 {
+        background-image: url("../image/keepfresh.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .proj2 {
+        background-image: url("../image/aws.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .proj3 {
+        background-image: url("../image/color.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .proj2_bg {
+        background-image: url("../image/pattern3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .proj3_bg {
+        background-image: url("../image/pattern1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .click_me {
+        font-weight: 500;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+        font-size: 10px;
+        line-height: 30px;
+        max-width: 380px;
+    }
+
+    .click_me a {
+        text-decoration: none;
+        color: #F37021;
+        transition: 0.2s;
+    }
+
+    .click_me a:hover {
+        color: white;
+    }
+
+
+
+
+    .project_header {
+        color: white;
+        max-width: 380px;
+        font-weight: 100;
+        font-size: 24px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .project_desc {
+        font-weight: 300;
+        padding-left: 20px;
+        padding-top: 10px;
+        /*padding-bottom: 20px;*/
+        color: white;
+        font-size: 12px;
+        line-height: 20px;
+        max-width: 250px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 0.3fr 0.6fr 0.4fr 0.4fr 0.3fr;
+        grid-template-rows: 0.3fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+    ". . . . ."
+    ". proj1 proj1_bg proj1_bg ."
+    ". proj1 proj1_des proj1_des ."
+    ". . . . ."
+    ". proj2 proj2_bg proj2_bg ."
+    ". proj2 proj2_des proj2_des ."
+    ". . . . ."
+    ". proj3 proj3_bg proj3_bg ."
+    ". proj3 proj4_des proj4_des ."
+    ". . . . ."
+    "bottom bottom bottom bottom bottom";
+    }
+
+    .proj1 {
+        background-color: white;
+        grid-area: proj1; }
+
+    .proj1_bg {
+        grid-area: proj1_bg;
+        background-color: #C5E1A5
+    }
+
+    .proj1_des {
+        background-color: #212121;
+        grid-area: proj1_des;
+    }
+
+    .proj2 {
+        background-color: white;
+        grid-area: proj2;
+    }
+
+    .proj2_bg {
+        background-color: #F37021;
+        grid-area: proj2_bg; }
+
+    .proj2_des {
+        background-color: #212121;
+        grid-area: proj2_des; }
+
+    .proj3 {
+        background-color: white;
+        grid-area: proj3; }
+
+    .proj3_bg {
+        background-color: #B2DFDB;
+        grid-area: proj3_bg; }
+
+    .proj4_des {
+        background-color: #212121;
+        grid-area: proj4_des; }
+
+    .bottom p{
+        color:white;
+        text-align: center;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        font-size: 10px;
+    }
+
+    .flex-container img {
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        transition: 0.2s;
+    }
+
+    .bottom img:hover {
+        opacity: 0.5;
+    }
+
+    .bottom {
+        background-color: black;
+        grid-area: bottom; }
+}
+
+@media only screen and (max-width: 425px) {
+    .nav_bar {
+        font-weight: 500;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+    }
+
+    .nav_bar ul > li {
+        float: right;
+        display: inline-block;
+        zoom:1;
+        *display:inline;
+        padding-right: 30px;
+    }
+
+    li a {
+        text-decoration: none;
+        font-size: 12px;
+        color: black;
+        transition: 0.2s;
+    }
+
+    li a:hover {
+        color: #F37021;
+    }
+
+    .proj1_bg {
+        background-image: url("../image/pattern2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .proj1 {
+        background-image: url("../image/keepfresh.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .proj2 {
+        background-image: url("../image/aws.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .proj3 {
+        background-image: url("../image/color.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .proj2_bg {
+        background-image: url("../image/pattern3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .proj3_bg {
+        background-image: url("../image/pattern1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .click_me {
+        font-weight: 500;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+        font-size: 8px;
+        line-height: 30px;
+        max-width: 380px;
+    }
+
+    .click_me a {
+        text-decoration: none;
+        color: #F37021;
+        transition: 0.2s;
+    }
+
+    .click_me a:hover {
+        color: white;
+    }
+
+
+
+
+    .project_header {
+        color: white;
+        max-width: 380px;
+        font-weight: 100;
+        font-size: 18px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .project_desc {
+        font-weight: 300;
+        padding-left: 20px;
+        padding-top: 10px;
+        /*padding-bottom: 20px;*/
+        color: white;
+        font-size: 8px;
+        line-height: 20px;
+        max-width: 200px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 0.2fr 0.6fr 0.6fr 0.6fr 0.2fr;
+        grid-template-rows: 0.3fr 0.2fr 0.2fr 0.2fr 0.5fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+    ". . . . ."
+    ". proj1 proj1_bg proj1_bg ."
+    ". proj1 proj1_des proj1_des ."
+    ". . . . ."
+    ". proj2 proj2_bg proj2_bg ."
+    ". proj2 proj2_des proj2_des ."
+    ". . . . ."
+    ". proj3 proj3_bg proj3_bg ."
+    ". proj3 proj4_des proj4_des ."
+    ". . . . ."
+    "bottom bottom bottom bottom bottom";
+    }
+
+    .proj1 {
+        background-color: white;
+        grid-area: proj1; }
+
+    .proj1_bg {
+        grid-area: proj1_bg;
+        background-color: #C5E1A5
+    }
+
+    .proj1_des {
+        background-color: #212121;
+        grid-area: proj1_des;
+    }
+
+    .proj2 {
+        background-color: white;
+        grid-area: proj2;
+    }
+
+    .proj2_bg {
+        background-color: #F37021;
+        grid-area: proj2_bg; }
+
+    .proj2_des {
+        background-color: #212121;
+        grid-area: proj2_des; }
+
+    .proj3 {
+        background-color: white;
+        grid-area: proj3; }
+
+    .proj3_bg {
+        background-color: #B2DFDB;
+        grid-area: proj3_bg; }
+
+    .proj4_des {
+        background-color: #212121;
+        grid-area: proj4_des; }
+
+    .bottom p{
+        color:white;
+        text-align: center;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        font-size: 10px;
+    }
+
+    .flex-container img {
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        transition: 0.2s;
+    }
+
+    .bottom img:hover {
+        opacity: 0.5;
+    }
+
+    .bottom {
+        background-color: black;
+        grid-area: bottom; }
+}
